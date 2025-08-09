@@ -1,3 +1,12 @@
-# terraform_nsx_vmc
+# What is this?
 
-Terraform segment and network policy
+An IAC(Infrastructure as Code) approach to build your VMware NSX infrastructure using Terraform. The specific purpose this project achieve is the case you have to migrate an on-prem VMware infrastructure to a VMware on Cloud on AWS. Thanks to this approach, it's not necessary to manual migrate, but you can just adjust this code to your case and run it by Terraform cli.
+
+### Content
+
+the code in this repository cover these objects:
+* Logical segments
+* services
+* Security Groups
+
+Feel free to improve it
