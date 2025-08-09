@@ -1,0 +1,102 @@
+[
+  {
+    "expression": [
+      {
+        "member_type": "VirtualMachine",
+        "key": "Tag",
+        "operator": "EQUALS",
+        "scope_operator": "EQUALS",
+        "value": "example|tag",
+        "resource_type": "Condition",
+        "id": "00000000-0000-0000-0000-000000000001",
+        "path": "/infra/domains/default/groups/EXAMPLE-GROUP-1/condition-expressions/00000000-0000-0000-0000-000000000001",
+        "relative_path": "00000000-0000-0000-0000-000000000001",
+        "parent_path": "/infra/domains/default/groups/EXAMPLE-GROUP-1",
+        "marked_for_delete": false,
+        "overridden": false,
+        "_protection": "NOT_PROTECTED"
+      }
+    ],
+    "extended_expression": [],
+    "reference": false,
+    "resource_type": "Group",
+    "id": "EXAMPLE-GROUP-1",
+    "display_name": "Example Group 1",
+    "path": "/infra/domains/default/groups/EXAMPLE-GROUP-1",
+    "relative_path": "EXAMPLE-GROUP-1",
+    "parent_path": "/infra/domains/default",
+    "unique_id": "00000000-0000-0000-0000-000000000001",
+    "realization_id": "00000000-0000-0000-0000-000000000001",
+    "marked_for_delete": false,
+    "overridden": false,
+    "_create_time": 0,
+    "_create_user": "template@domain.com",
+    "_last_modified_time": 0,
+    "_last_modified_user": "template@domain.com",
+    "_system_owned": false,
+    "_protection": "NOT_PROTECTED",
+    "_revision": 1
+  },
+  {
+    "expression": [
+      {
+        "member_type": "VirtualMachine",
+        "key": "Name",
+        "operator": "EQUALS",
+        "value": "example-vm",
+        "resource_type": "Condition",
+        "id": "00000000-0000-0000-0000-000000000002",
+        "path": "/infra/domains/default/groups/EXAMPLE-GROUP-2/condition-expressions/00000000-0000-0000-0000-000000000002",
+        "relative_path": "00000000-0000-0000-0000-000000000002",
+        "parent_path": "/infra/domains/default/groups/EXAMPLE-GROUP-2",
+        "marked_for_delete": false,
+        "overridden": false,
+        "_protection": "NOT_PROTECTED"
+      },
+      {
+        "conjunction_operator": "OR",
+        "resource_type": "ConjunctionOperator",
+        "id": "00000000-0000-0000-0000-000000000003",
+        "path": "/infra/domains/default/groups/EXAMPLE-GROUP-2/conjunction-expressions/00000000-0000-0000-0000-000000000003",
+        "relative_path": "00000000-0000-0000-0000-000000000003",
+        "parent_path": "/infra/domains/default/groups/EXAMPLE-GROUP-2",
+        "marked_for_delete": false,
+        "overridden": false,
+        "_protection": "NOT_PROTECTED"
+      },
+      {
+        "member_type": "VirtualMachine",
+        "key": "Name",
+        "operator": "EQUALS",
+        "value": "example-vm-2",
+        "resource_type": "Condition",
+        "id": "00000000-0000-0000-0000-000000000004",
+        "path": "/infra/domains/default/groups/EXAMPLE-GROUP-2/condition-expressions/00000000-0000-0000-0000-000000000004",
+        "relative_path": "00000000-0000-0000-0000-000000000004",
+        "parent_path": "/infra/domains/default/groups/EXAMPLE-GROUP-2",
+        "marked_for_delete": false,
+        "overridden": false,
+        "_protection": "NOT_PROTECTED"
+      }
+    ],
+    "extended_expression": [],
+    "reference": false,
+    "resource_type": "Group",
+    "id": "EXAMPLE-GROUP-2",
+    "display_name": "Example Group 2",
+    "path": "/infra/domains/default/groups/EXAMPLE-GROUP-2",
+    "relative_path": "EXAMPLE-GROUP-2",
+    "parent_path": "/infra/domains/default",
+    "unique_id": "00000000-0000-0000-0000-000000000002",
+    "realization_id": "00000000-0000-0000-0000-000000000002",
+    "marked_for_delete": false,
+    "overridden": false,
+    "_create_time": 0,
+    "_create_user": "template@domain.com",
+    "_last_modified_time": 0,
+    "_last_modified_user": "template@domain.com",
+    "_system_owned": false,
+    "_protection": "NOT_PROTECTED",
+    "_revision": 1
+  }
+]

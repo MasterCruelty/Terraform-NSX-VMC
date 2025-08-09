@@ -1,0 +1,2 @@
+service_name,service_description,entry_name,entry_description,protocol,source_ports,destination_ports
+S1-L4-test-terraform,L4 ports service provisioned by Terraform,TCP80,TCP port 80 entry,TCP,22,80;180
