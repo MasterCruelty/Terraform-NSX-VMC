@@ -36,12 +36,12 @@ data "nsxt_policy_tier1_gateway" "t1_destname"{
 }
 
 locals {
-  pilot_segments = [
-    "segment-pilot-01",
-    "segment-pilot-02",
-    "segment-pilot-03",
-    "segment-pilot-04",
-    "segment-pilot-05"
+  demo_segments = [
+    "segment-demo-01",
+    "segment-demo-02",
+    "segment-demo-03",
+    "segment-demo-04",
+    "segment-demo-05"
   ]
 }
 
@@ -49,7 +49,7 @@ resource "nsxt_policy_fixed_segment" "this" {
         display_name = var.name
         vlan_ids = [var.vlan_id]
         #transport_zone_path = data.nsxt_policy_transport_zone.overlay_tz.path
-        connectivity_path = contains(local.pilot_segments, var.name) ? data.nsxt_policy_tier1_gateway.t1_demo.path : data.nsxt_policy_tier1_gateway.t1_destname.path
+        connectivity_path = contains(local.demo_segments, var.name) ? data.nsxt_policy_tier1_gateway.t1_demo.path : data.nsxt_policy_tier1_gateway.t1_destname.path
         subnet {
                 cidr = var.cidr # static CIDR
                 #cidr = "10.250.${index(var.logical_segments, each.value) + 1}.1/24" # Example dynamic CIDR
